@@ -1,0 +1,15 @@
+clc;
+close all;
+clear all;
+n=-4:4;
+x=2*(n>=0);
+subplot(2,1,1);
+stem(n,x);
+xlabel('time');
+ylabel('amplitude');
+title('unit step');
+subplot(2,1,2);
+plot(n,x);
+xlabel('time');
+ylabel('amplitude');
+title('unit step');

@@ -1,0 +1,17 @@
+clc;
+clear all;
+close all;
+t=-2:1:6;
+n=input('enter sequence');
+h=input('enter shifting factor');
+y=t-h;
+subplot(2,2,1);
+stem(t,n);
+xlabel('time');
+ylabel('ampli');
+title('0riginal sgl');
+subplot(2,2,2);
+stem(y,n);
+xlabel('time');
+ylabel('ampli');
+title('shifted sgl');

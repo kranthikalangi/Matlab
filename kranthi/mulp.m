@@ -1,0 +1,13 @@
+clc;
+close all;
+clear all;
+n=0:1:4;
+x1=[1 2 3 1 5];
+x2=[2 3 4 1 -2];
+subplot(2,2,1);
+stem(n,x1);
+subplot(2,2,2);
+stem(n,x2);
+subplot(2,2,3);
+mul=x1.*x2;
+stem(n,mul);

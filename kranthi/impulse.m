@@ -1,0 +1,16 @@
+clc;
+close all;
+clear all;
+n=input('enter n values');
+t=-n:1:n;
+x=1.*(t==0);
+subplot(2,1,1);
+stem(t,x);
+xlabel('time');
+ylabel('amplitude');
+title('impulse');
+subplot(2,1,2);
+plot(t,x);
+xlabel('time');
+ylabel('amplitude');
+title('impulse');

@@ -1,0 +1,13 @@
+clc;
+close all;
+clear all;
+t=-5:1:5;
+x=(t>=0);
+subplot(2,2,1);
+stem(t,x);
+subplot(2,2,2);
+y=upsample(t,3);
+stem(y);
+subplot(2,2,3);
+z=downsample(t,3);
+stem(z);

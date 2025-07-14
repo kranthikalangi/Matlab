@@ -1,0 +1,18 @@
+clc;
+close all;
+clear all;
+n=input('enter n value');
+t=-n:1:n;
+a=5;
+b=10;
+x=sin(a+1i*b*t);
+subplot(2,1,1);
+stem(t,x);
+xlabel('time');
+ylabel('amplitude');
+title('expo');
+subplot(2,1,2);
+plot(t,real(x));
+xlabel('time');
+ylabel('amplitude');
+title('real of expo');

@@ -1,0 +1,15 @@
+clc;
+clear all;
+close all;
+t=-2:1:6;
+n=input('enter sequence');
+subplot(2,2,1);
+stem(t,n);
+xlabel('time');
+ylabel('ampli');
+title('0riginal sgl');
+subplot(2,2,2);
+stem(-t,-n);
+xlabel('time');
+ylabel('ampli');
+title('shifted sgl');

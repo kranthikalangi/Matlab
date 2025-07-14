@@ -1,0 +1,10 @@
+f=10;
+t=0:0.01:100;
+x=sin(2*pi*f*t);
+plot(t,x)
+hold
+y=cos(2*pi*f*t);
+plot(t,y)
+hold
+s=x+y;
+plot(y,s)

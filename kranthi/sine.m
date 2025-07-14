@@ -1,0 +1,17 @@
+clc;
+close all;
+clear all;
+a=input('enter amplitude');
+f=input('enter frequency');
+t=0:0.1:10;
+y=a*sin(2*pi*f*t);
+subplot(2,1,1);
+plot(t,y);
+xlabel('time');
+ylabel('amp');
+title('sine wave');
+subplot(2,1,2);
+stem(t,y);
+xlabel('time');
+ylabel('amp');
+title('sine wave');
